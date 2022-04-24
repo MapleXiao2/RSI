@@ -1,0 +1,52 @@
+*{margin:0;padding:0;border:0;list-style:none;text-decoration:none;color:inherit;font-weight:400;font-family:"微软雅黑";box-sizing:border-box;font-style:normal;outline:0;-webkit-tap-highlight-color:transparent}
+body{width:100%;overflow-x:hidden;background:#151827;}
+img{vertical-align:middle;max-width:100%}
+.clearfix:after,.clearfix:before{display:table;line-height:0;content:""}
+/* 通用类 */
+.left{float:left}
+.mgt20{margin-top:20px}
+.mgt50{margin-top:50px}
+.w1200{margin:0 auto;width:1200px;}
+/* 背景标题 */
+.product{background:url(../images/server_product_function_bg.jpg) no-repeat top center;background-size: 100%;height:846px;width:100%;}
+.product .title{color:#fff;height:148px;line-height:148px;font-size:32px;position:relative;text-align:center}
+/* 左侧分类 */
+.product-left{width:165px}
+.prod-item{width:165px;height:65px;line-height:65px;border-top:1px solid #3c3d40;margin-bottom:1px;background:#2e3035 no-repeat 30px center;color:#fff;font-size:16px;text-align:center;text-indent:2em;cursor:pointer}
+.prod-item.active,.prod-item:hover{background-color:#27282c;color:#0af}
+.prodprod-calculate{background-image:url(../images/server_prod_icon_graph.png)}
+.prodprod-calculate.active,.prodprod-calculate:hover{background-image:url(../images/server_prod_icon_graph_active.png)}
+.prprod-save{background-image:url(../images/server_prod_icon_disk.png)}
+.prprod-save.active,.prprod-save:hover{background-image:url(../images/server_prod_icon_disk_active.png)}
+.prod-manage{background-image:url(../images/server_prod_icon_blocks.png)}
+.prod-manage.active,.prod-manage:hover{background-image:url(../images/server_prod_icon_blocks_active.png)}
+.prod-network{background-image:url(../images/server_prod_icon_global.png)}
+.prod-network.active,.prod-network:hover{background-image:url(../images/server_prod_icon_global_active.png)}
+.prod-safety{background-image:url(../images/server_prod_icon_shield.png)}
+.prod-safety.active,.prod-safety:hover{background-image:url(../images/server_prod_icon_shield_active.png)}
+/* 右侧部分 */
+.product-main{position:relative;background:url(../images/server_product_block_bg.png);width:1033px;height:604px;padding:70px 40px 0 70px;color:#ccc;font-size:14px}
+.product-detail{display:none}
+.product-detail.active{display:block}
+.product-main .p-d-title{line-height:30px;background:url(../images/server_product_dot_large.png) no-repeat left center;padding-left:48px;color:#fff;font-size:16px}
+.product-main .p-d-mini{line-height:2em;font-size:12px;color:#909091}
+.product-main .p-d-link{color:#088acf;font-size:12px}
+.p-d-content{line-height:1.8em;padding-left:48px}
+.p-d-content table{text-align:center}
+.p-d-content table td,.p-d-content table th{line-height:53px;border:1px solid #575757}
+.p-d-content table th{font-weight:400;color:#ccc;background:#4a4b4d}
+.p-d-content table td{border-top:none;min-width:250px}
+.p-d-content table td:first-child,.p-d-content table th:first-child{border-right:none}
+.p-d-sub{padding:5px;border-bottom:1px dashed #444547}
+.d-sub-first{border-top:1px dashed #444547}
+.p-d-sub-title{font-size:14px;padding-left:28px;background:url(../images/server_product_dot_small.png) no-repeat left center}
+.p-d-sub-text{font-size:12px;color:#9b9b9c}
+.sub-title-only{padding:20px}
+/* 顶部和底部蓝色渐隐效果 */
+.upper-shadow{position:absolute;top:-30px;left:50%;margin-left:-270px;width:546px;height:30px;background:url(../images/server_breath_top.png) no-repeat center;animation:shadow-breath 3s ease infinite}
+.bottom-shadow{position:absolute;bottom:-47px;left:50%;margin-left:-392px;width:784px;height:47px;background:url(../images/server_breath_bottom.png);animation:shadow-breath 3s ease infinite}
+@keyframes shadow-breath{
+  0%{opacity:1}
+  50%{opacity:.2}
+  100%{opacity:1}
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.softwaredemo.dao.HistoryDAO">
+    <insert id="addHistory" parameterType="history">
+        insert into rsi.history(operation_type, fileA, fileB, result)
+        values (#{operationType},#{fileA},#{fileB},#{result});
+
+    </insert>
+
+    <select id="getMaxID" resultType="_int">
+        select max(id) from rsi.history
+    </select>
+</mapper>
